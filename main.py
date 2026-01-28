@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from urllib.parse import urlparse
 
 
-def createParser ():
+def create_parser ():
     parser = argparse.ArgumentParser()
     parser.add_argument ('link')
  
@@ -71,4 +71,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
