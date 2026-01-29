@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from urllib.parse import urlparse
 
 
-def create_parser ():
+def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument ('link')
  
@@ -55,7 +55,7 @@ def count_clicks(token, link):
 
 
 def main():
-    parser = createParser()
+    parser = create_parser()
     linkspace = parser.parse_args()
     load_dotenv(".env")
     token = os.environ["VK_SERVICE_KEY"]
@@ -73,3 +73,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
